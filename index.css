@@ -1,0 +1,384 @@
+/* ===========================
+
+    project is not completed
+
+============================ */
+
+body {
+    height: 100%;
+    margin: 20px 0px 0px 0px;
+    background-color: rgb(18, 12, 48);
+    color: white;
+    /* overflow: auto; */
+  }
+  
+  /* navigation */
+  
+  /* menu bar */
+  
+  #main-menu {
+    height: 70px;
+    display: flex;
+    margin: 0% 5% 0% 5%;
+    justify-content: space-between;
+  }
+  #menu-left,
+  #menu-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #logo-site {
+    height: 100%;
+  }
+  #logo-site img {
+    height: 100%;
+    border-radius: 50%;
+  }
+  #site-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+  }
+  #site-name h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  #site-name h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  #search-bar {
+    height: 50%;
+    border: none;
+    outline: none;
+    font-size: x-large;
+    border-radius: 7px;
+    padding: 0%;
+    border: 2px solid rgb(63, 110, 205);
+  }
+  #notification-logo {
+    height: 50%;
+    border-radius: 50%;
+  }
+  #profile-logo {
+    height: 90%;
+    border-radius: 50%;
+  }
+  
+  /* main */
+  #main {
+    margin: 0% 5% 0% 7%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(18, 12, 48);
+  }
+  
+  /* main content  */
+  #main-content {
+    height: 84vh;
+    width: 75%;
+    background-color: rgb(18, 12, 48);
+    margin-right: 10px;
+    overflow-x: auto;
+  }
+  #main-content::-webkit-scrollbar,
+  #main-content-type::-webkit-scrollbar,
+  #liked-song-list::-webkit-scrollbar,
+  #artists::-webkit-scrollbar,
+  #song-type-list::-webkit-scrollbar {
+    display: none;
+  }
+  #main-content-type {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+  .box-content {
+    height: 179px;
+    width: 179px;
+    margin-right: 10px;
+  }
+  /* #main-content:hover{
+    transform: scale(1.5);
+  } */
+  
+  /* Leatest Release */
+  
+  #Leatest-release {
+    height: auto;
+    /* border: 2px solid red; */
+  }
+  .leatest-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .leatest {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(31, 167, 167);
+  }
+  .leatest-div-2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .leatest-div-2 a img {
+    /* width: 100%; */
+    /* height: 100%; */
+    height: 100%;
+  }
+  .text-dec-a {
+    height: 100%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .ellipse-view {
+    height: 100%;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  .ellipsis-view a img {
+    width: 10px;
+    justify-content: flex-end;
+  }
+  
+  /* popular atists profile */
+  
+  #artists {
+    height: 200px;
+    display: flex;
+    overflow-x: auto;
+    /* justify-content: space-between; */
+  }
+  .artists-profile {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .artists-name-pic h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Types of song  */
+  
+  #song-type-list {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    overflow: auto;
+    background-color: rgb(10, 4, 41);
+  }
+  
+  #art {
+    background-image: url("picture/song type/art.png");
+    /* -webkit-filter: blur(0.4px); */
+  }
+  #classical {
+    background-color: rgb(149, 149, 211);
+    background-image: url("picture/song type/classical\ music.png");
+    /* -webkit-filter: blur(0.5px); */
+  }
+  #cover {
+    background-image: url(picture/images-singer.png);
+  }
+  #folk {
+    background-image: url(picture/images-singer.png);
+  }
+  #hip-hop {
+    background-image: url("picture/song type/hip hop.jpg");
+  }
+  #love {
+    background-image: url("picture/song type/love.jpg");
+    z-index: 2;
+    /* position: absolute; */
+    /* -webkit-filter: blur(0.4px); */
+  }
+  /* #love span{
+    z-index:1;
+  } */
+  #pop {
+    background-image: url(picture/images-singer.png);
+  }
+  #rock {
+    background-image: url(picture/images-singer.png);
+  }
+  #workout {
+    background-image: url("picture/song type/workout.jpg");
+    margin-right: 15px;
+  }
+  .song-type-box-size {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 50%;
+  }
+  #song-type-list a {
+    text-decoration: none;
+    color: rgb(181, 225, 238);
+  }
+  
+  /* made for you */
+  
+  /* #made-for-you {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #made-for-you div {
+    height: 100px;
+    width: 200px;
+    background-color: aquamarine;
+  } */
+  
+  /* aside */
+  
+  @media only screen and (max-width: 1200px) {
+    #aside-bar {
+      width: 0%;
+      height: auto;
+      display: none;
+    }
+    #main-content {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    #search-bar {
+      font-size: larger;
+      height: auto;
+      width: 125px;
+    }
+    #profile-logo {
+      height: 60%;
+    }
+    #notification-logo {
+      height: 30%;
+    }
+    #logo-site {
+      height: 80%;
+    }
+    #main-menu {
+      margin: 0% 3% 0% 3%;
+    }
+    #site-name h3 {
+      font-size: 15px;
+    }
+    #site-name h4 {
+      font-size: 12px;
+    }
+  }
+  
+  #aside-bar {
+    margin-top: 40px;
+    width: 25%;
+    margin-left: 10px;
+    background-color: rgb(18, 12, 48);
+  }
+  
+  #liked-song-navbar {
+    /* display :flex ; */
+    justify-content: flex-end;
+    align-items: center;
+    /* position:absolute; */
+  }
+  #first-div-queue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #queue a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  #dropdown-option {
+    /* height:0px;
+    width: 0px; */
+    background-color: rgb(228, 0, 0);
+    overflow: hidden;
+    justify-content: right;
+  }
+  #dropdown-option div {
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #dropdown-option div a {
+    width: auto;
+  }
+  
+  #queue:hover #dropdown-option {
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    overflow: visible;
+    /* color: rgb(82, 210, 62); */
+    background-color: rgb(14, 222, 194);
+    margin-right: -50px;
+  }
+  /* #queue div a{
+    color: black;
+  } */
+  
+  #liked-song-list {
+    /* margin-top: 60px; */
+    overflow: auto;
+    height: 70vh;
+    overflow-x: hidden;
+  }
+  #rotate {
+    /* margin-bottom: 0px; */
+    transform: rotate(180deg);
+  }
+  
+  .song-list {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* decoration aside  */
+  
+  .song-list img {
+    width: 50px;
+    height: 50px;
+  }
+  /* singer name */
+  .song-name {
+    margin-bottom: 5px;
+  }
+  /* writer name  */
+  .song-writer {
+    margin-top: 5px;
+    color: rgb(133, 133, 133);
+  }
+  .song-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* main content  */
+  
